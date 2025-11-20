@@ -13,7 +13,7 @@ on:
 
 jobs:
   health-check:
-    runs-on: self-hosted
+    runs-on: [self-hosted, generic]
     env:
       ARIA_AUTOMATION_USERNAME: ${{ vars.ARIA_AUTOMATION_USERNAME }}
       ARIA_AUTOMATION_PASSWORD: ${{ secrets.ARIA_AUTOMATION_PASSWORD }}
